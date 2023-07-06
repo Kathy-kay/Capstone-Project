@@ -3,7 +3,7 @@
 import React, {useState} from 'react'
 import { CreateFeed } from '../../constant/types'
 import EditHeader from '../header/EditHeader'
-import CreateFeedForm from './createFeedForm'
+import CreateFeedForm from './CreateFeedForm'
 import PreviewFeed from './previewFeed'
 
 

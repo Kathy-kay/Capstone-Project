@@ -4,25 +4,7 @@ import 'react-quill/dist/quill.snow.css';
 import ReactQuill from 'react-quill';
 
 
-const modules = {
-  toolbar: [
-    [{ header: '1' }, { header: '2' }, { header: '3' }, { font: [] }],
-    [{ size: [] }],
-    ['bold', 'italic', 'underline', 'strike', 'blockquote'],
-    [
-      { list: 'ordered' },
-      { list: 'bullet' },
-      { indent: '-1' },
-      { indent: '+1' },
-    ],
-    ['code-block', 'emoji'],
-    ['link', 'image', 'video'],
-    ['clean'],
-  ],
-  clipboard: {
-    matchVisual: false,
-  },
-};
+
 
 type EditorProps = {
   content: string;
@@ -30,6 +12,25 @@ type EditorProps = {
 };
 
 const TinyEditor: React.FC<EditorProps> = ({ content, setContent }) => {
+  const modules = {
+    toolbar: [
+      [{ header: '1' }, { header: '2' }, { header: '3' }, { font: [] }],
+      [{ size: [] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [
+        { list: 'ordered' },
+        { list: 'bullet' },
+        { indent: '-1' },
+        { indent: '+1' },
+      ],
+      ['code-block', 'emoji'],
+      ['link', 'image', 'video'],
+      ['clean'],
+    ],
+    clipboard: {
+      matchVisual: false,
+    },
+  };
   return (
     <>
       <ReactQuill

@@ -5,10 +5,11 @@ import {createFeed} from "../../firebase/CreateFeed"
 import { auth, storage } from '../../firebase/firebaseConfig';
 import { v4 as uuidv4 } from "uuid";
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
-import TinyEditor from './editor';
+
 import TagInput from './TagInputField';
 import {createDraft} from "../../firebase/CreateDraft"
 import { useNavigate } from 'react-router-dom';
+import TinyEditor from './Editor';
 
 type CreateFeedFormProps = {
   setFeed: Dispatch<SetStateAction<CreateFeed>>;

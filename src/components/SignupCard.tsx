@@ -33,7 +33,7 @@ const SignupCard: React.FC = () => {
       return;
     }
     setLoading(false);
-    navigate("/feed")
+    navigate("/feeds")
 
   }
 

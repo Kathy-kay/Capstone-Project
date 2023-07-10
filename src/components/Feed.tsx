@@ -101,7 +101,7 @@ const SingleFeed = ({ feed, setFeeds, feeds }: FeedProp) => {
                 <div className="flex gap-x-3 items-center pr-2 lg:pr-10">
                   {feed?.author?.id === user?.uid ? (
                     <>
-                      <Link to={`edit/${encodeURIComponent(feed.id!)}`}>
+                      <Link to={`/edit/${encodeURIComponent(feed.id!)}`}>
                         <AiOutlineEdit />
                       </Link>
                       <button onClick={deleteFeed}>

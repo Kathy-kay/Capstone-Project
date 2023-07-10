@@ -15,8 +15,15 @@ export type ISignUp = {
     userName: string;
     confirmPassword: string;
    
-    
 }
+
+export type Reaction = {
+  eyes: number;
+  heart: number;
+  hooray: number;
+  rocket: number;
+  thumbsUp: number;
+};
 
 export type MyUser = User;
 

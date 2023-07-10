@@ -7,6 +7,7 @@ import CreatePost from "./Pages/CreatePost";
 import LoginPage from "./Pages/auth/LoginPage";
 import SignUp from "./Pages/auth/SignUp";
 import Navbar from "./components/Navbar";
+import EditFeed from "./components/feeds/EditFeed";
 
 
 const App: React.FC = () =>{
@@ -21,6 +22,7 @@ const App: React.FC = () =>{
           <Route path="feeds" element={<Feeds/>}/>
           <Route path="new" element={<CreatePost />} />
           <Route path="login" element={<LoginPage/>}/>
+          <Route path="/edit" element={<EditFeed />} />
           <Route path="signup" element={<SignUp/>}/>
    
         </Routes>

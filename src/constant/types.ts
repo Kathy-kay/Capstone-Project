@@ -45,6 +45,7 @@ export type UserChatter = {
 
 
   export type Feed = {
+    reactions: any;
     id?: string;
     title: string;
     content: string;

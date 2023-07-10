@@ -117,7 +117,7 @@ const CreateFeedForm: React.FC<CreateFeedFormProps> = ({
       ...feed,
       content,
     };
-    navigate("/feeds")
+   
     const { error } = await createFeed(feedData);
 
     if (error) {
@@ -128,7 +128,7 @@ const CreateFeedForm: React.FC<CreateFeedFormProps> = ({
     setLoading((prev) => ({ ...prev, feed: false }));
     // Handle the redirect or further actions after successful feed creation
 
-
+    navigate("/feeds")
   };
   const handleDraft = async () => {
     setLoading({

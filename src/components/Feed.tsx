@@ -44,7 +44,7 @@ const SingleFeed = ({ feed, setFeeds, feeds }: FeedProp) => {
         <div className="shadow-md text-lg font-mono py-3 px-2 mt-10">
           <div>
             <Link
-              to={feed?.id ? `feed/${encodeURIComponent(feed.id)}` : '#'}
+              to={feed?.id ? `/feed/${feed.id}` : '#'}
             >
               <div className="w-full">
                 {feed?.imageUrl ? (
@@ -101,7 +101,7 @@ const SingleFeed = ({ feed, setFeeds, feeds }: FeedProp) => {
                 <div className="flex gap-x-3 items-center pr-2 lg:pr-10">
                   {feed?.author?.id === user?.uid ? (
                     <>
-                      <Link to={`/edit/${encodeURIComponent(feed.id!)}`}>
+                      <Link to={`/edit/${feed.id!}`}>
                         <AiOutlineEdit />
                       </Link>
                       <button onClick={deleteFeed}>

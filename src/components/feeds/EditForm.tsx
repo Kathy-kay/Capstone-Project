@@ -1,5 +1,5 @@
 import TinyEditor from './Editor';
-import TagInput from './tagInputField';
+import TagInput from './TagInputField';
 import { v4 as uuidv4 } from 'uuid';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import {

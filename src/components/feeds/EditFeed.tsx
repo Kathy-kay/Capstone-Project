@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useState } from 'react';
-import PreviewFeed from './previewFeed';
+import PreviewFeed from './PreviewFeed';
 import { getDoc, doc } from 'firebase/firestore';
 import EditForm from './EditForm';
 import { CreateFeed } from '../../constant/types';

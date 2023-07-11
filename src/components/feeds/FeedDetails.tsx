@@ -10,9 +10,9 @@ import {
   updateDoc,
   Timestamp,
 } from 'firebase/firestore';
-import Comment from '../../components/comments/Comment';
-import CommentForm from '../../components/comments/CommentForm';
-import Reactions from '../../components/comments/Reactions';
+import Comment from '../comments/Comment';
+import CommentForm from '../comments/commentForm';
+import Reactions from '../comments/Reactions';
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize from 'rehype-sanitize';
 import remarkGfm from 'remark-gfm';

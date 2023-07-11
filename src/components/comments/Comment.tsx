@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 
 import { convertDate } from '../../utils/convertDate';
-import CommentForm from './commentForm';
+import CommentForm from './CommentForm';
 import { ActiveComment } from '../feeds/FeedDetails';
 import { Timestamp } from 'firebase/firestore';
 import { Author, IComment } from '../../constant/types';

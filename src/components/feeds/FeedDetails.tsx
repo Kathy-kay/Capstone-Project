@@ -11,7 +11,7 @@ import {
   Timestamp,
 } from 'firebase/firestore';
 import Comment from '../comments/Comment';
-import CommentForm from '../comments/commentForm';
+import CommentForm from '../comments/CommentForm';
 import Reactions from '../comments/Reactions';
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize from 'rehype-sanitize';

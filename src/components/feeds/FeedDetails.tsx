@@ -15,7 +15,7 @@ import CommentForm from '../comments/CommentForm';
 import Reactions from '../comments/Reactions';
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize from 'rehype-sanitize';
-import remarkGfm from 'remark-gfm';
+import remarkGfm from 'remark-gfm'; 
 import { feedCol } from '../../firebase/collections';
 import { useAuth } from '../../context/AuthProvider';
 import { useNavigate } from 'react-router-dom';

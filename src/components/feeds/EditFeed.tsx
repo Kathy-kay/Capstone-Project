@@ -9,7 +9,7 @@ import {  useParams } from 'react-router-dom';
 import { feedCol } from '../../firebase/collections';
 
 const EditFeed: React.FC= () => {
-  const [preview, setPreview] = useState(false);
+  const [preview] = useState(false);
   const [feed, setFeed] = useState<CreateFeed>({
     title: '',
     image: null,

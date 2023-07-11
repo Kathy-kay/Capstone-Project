@@ -31,7 +31,7 @@ type FeedPageProps = {
   setEmojis: Dispatch<SetStateAction<Reaction>>;
 };
 
-type ActiveComment = {
+ export type ActiveComment = {
   id: string;
   type: 'editing' | 'replying';
 };
